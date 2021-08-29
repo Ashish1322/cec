@@ -1,0 +1,152 @@
+{% extends 'cecday/basic.html' %}
+{% block body %}
+<div class="text-center mt-4">
+    
+    <h1 class="headings" style="display: inline; color: #a73638;">Technical Events</h1>
+
+  </div>
+
+  <div class="container">
+    <div class="album py-5 bg-light">
+        <div class="container">
+    
+          <div class="row row-cols-1 row-cols-sm-2 row-cols-md-3 g-3">
+           
+             
+            <div class="col">
+                <div class="card shadow-sm">
+                  <img src="https://images.unsplash.com/photo-1583508915901-b5f84c1dcde1?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=750&q=80" alt="" >
+      
+                  <div class="card-body box">
+                    <h3>Designathon</h3>
+                    <p class="card-text">Show your creativity in Web Development Hackathon. Showcase your web development skills at the hackathon and win amazing prizes. control over things like the color, fonts, layout, and overall design of a webpage as well as backend systems.</p>
+                    <div class="d-flex justify-content-between align-items-center">
+                      <div class="btn-group">
+                        <a href="{% url 'designathon' %}" type="button" class="btn btn-sm btn-outline-secondary">View Details</a>
+                        <a href="{% url 'designathon_register' %}" type="button" class="btn btn-sm btn-outline-secondary">Register</a>
+                      </div>
+                      
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="col">
+                <div class="card shadow-sm">
+                  <img src="https://images.unsplash.com/photo-1580894894513-541e068a3e2b?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=750&q=80" alt="">
+      
+                  <div class="card-body box">
+                     <h3>Break the Strategy</h3>
+                    <p class="card-text">Coding Competition of Python, C++, Java  and consist of 2 Rounds. Prove your skills, win prizes, practice coding with other coders, have fun by registering to this contest. Let’s venture together and have fun while coding.</p>
+                    <div class="d-flex justify-content-between align-items-center">
+                      <div class="btn-group">
+                        <a href="{% url 'break_strategy' %}" type="button" class="btn btn-sm btn-outline-secondary">View Details</a>
+                        <a href="{% url 'break_strategy_register' %}" type="button" class="btn btn-sm btn-outline-secondary">Register</a>
+                      </div>
+                    
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="col ">
+                <div class="card shadow-sm">
+                 <img src="https://images.unsplash.com/photo-1590402494682-cd3fb53b1f70?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=750&q=80" alt="">
+      
+                  <div class="card-body box">
+                    <h3>Technical Presentation </h3>
+                    <p class="card-text">Technical presentation is an individual competition where each participant is required to make a Power point presentation about a given topic or area, and then present it in front of jury members.</p>
+                    <div class="d-flex justify-content-between align-items-center">
+                      <div class="btn-group">
+                        <a href="{% url 'technical_presentation' %}" type="button" class="btn btn-sm btn-outline-secondary">View Details</a>
+                        <a  href="{% url 'technical_presentation_register' %}"  type="button" class="btn btn-sm btn-outline-secondary">Register</a>
+                      </div>
+                  
+                    </div>
+                  </div>
+                </div>
+              </div>
+  
+              <div class="col ">
+                  <div class="card shadow-sm">
+                    <img src="https://images.unsplash.com/photo-1606326608690-4e0281b1e588?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=750&q=80" alt="">
+        
+                    <div class="card-body box">
+                      <h3>Tech-Quiz</h3>
+                      <p class="card-text">Coding Quiz on all the Programming Languages on a Single sheet. Our aim is to  encourage students to achieve academic excellence and Increase their awareness of the world around.</p>
+                      <div class="d-flex justify-content-between align-items-center">
+                        <div class="btn-group">
+                          <a href="{% url 'tech_quiz' %}" type="button" class="btn btn-sm btn-outline-secondary">View Details</a>
+                          <a href="{% url 'tech_quiz_register' %}" type="button" class="btn btn-sm btn-outline-secondary">Register</a>
+                        </div>
+                    
+                      </div>
+                    </div>
+                  </div>
+                </div>
+  
+                <div class="col ">
+                  <div class="card shadow-sm">
+                   <img src="https://images.unsplash.com/photo-1555664424-778a1e5e1b48?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=750&q=80" alt="">
+        
+                    <div class="card-body box">
+                      <h3>Arduino Challenge</h3>
+                      <p class="card-text">Arduino coding and circuit designing Challenge. Design of sensory systems using the platform Arduino by undergraduate coding and basic knowledge of electric circuits and show your skills.</p>
+                      <div class="d-flex justify-content-between align-items-center">
+                        <div class="btn-group">
+                          <a href="{% url 'electroinsight' %}" type="button" class="btn btn-sm btn-outline-secondary">View Details</a>
+                          <a href="{% url 'electroinsight_register' %}"type="button" class="btn btn-sm btn-outline-secondary">Register</a>
+                        </div>
+                    
+                      </div>
+                    </div>
+                  </div>
+                </div>
+  
+                <div class="col ">
+                  <div class="card shadow-sm">
+                    <svg class="bd-placeholder-img card-img-top" width="100%" height="225" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Placeholder: Thumbnail" preserveAspectRatio="xMidYMid slice" focusable="false"><title>Placeholder</title><rect width="100%" height="100%" fill="#55595c"></rect><text x="50%" y="50%" fill="#eceeef" dy=".3em">Thumbnail</text></svg>
+        
+                    <div class="card-body box">
+                      <h3>Robo Presentation</h3>
+                      <p class="card-text">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Iste non quas officia et ab adipisci, similique excepturi, minima voluptates iusto fugit, quod nemo harum? Velit quasi unde deleniti ut voluptas.</p>
+                      <div class="d-flex justify-content-between align-items-center">
+                        <div class="btn-group">
+                          <a href="{% url 'roborace' %}" type="button" class="btn btn-sm btn-outline-secondary">View Details</a>
+                          <a href="{% url 'roborace_register' %}" type="button" class="btn btn-sm btn-outline-secondary">Register</a>
+                        </div>
+                    
+                      </div>
+                    </div>
+                  </div>
+                </div>
+   
+  
+                <div class="col ">
+                  <div class="card shadow-sm">
+                    <img src="https://images.unsplash.com/photo-1551836022-8b2858c9c69b?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=750&q=80" alt="">
+        
+                    <div class="card-body box">
+                      <h3>Project Display</h3>
+                      <p class="card-text">Dislay your Working/non-working technical and innovative projects and show your creative ideas. Impliment your creative minds and create something new and Showcase your skills. </p>
+                      <div class="d-flex justify-content-between align-items-center">
+                        <div class="btn-group">
+                          <a href="{% url 'project_display' %}" type="button" class="btn btn-sm btn-outline-secondary">View Details</a>
+                          <a href="{% url 'project_display_register' %}" type="button" class="btn btn-sm btn-outline-secondary">Register</a>
+                        </div>
+                    
+                      </div>
+                    </div>
+                  </div>
+                </div>
+
+              
+    
+     
+    
+         
+       
+          </div>
+        
+        </div>
+      </div>
+</div>
+{% endblock body %}
