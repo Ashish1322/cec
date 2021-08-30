@@ -64,7 +64,7 @@ def designathon_register(request):
         branch3 = request.POST['branch3']
         semester3 = request.POST['semester3']
         rollno3 = request.POST['rollno3']
-        file3 = request.FILES['file3']
+        
 
         name4 = request.POST['name4']
         phonenumbe4 = request.POST['phonenumber4']
@@ -72,9 +72,20 @@ def designathon_register(request):
         branch4 = request.POST['branch4']
         semester4 = request.POST['semester4']
         rollno4 = request.POST['rollno4']
-        file4 = request.FILES['file4']
+      
 
-        a = Designathon(college=college,teamname=teamname,type_institution=institution,name1=name1,email1=email1,branch1=branch1,semester1=semester1,phone1 = phonenumber1,id1 = file1,rollno1=rollno1 , name2=name2,email2=email2,branch2=branch2,semester2=semester2,phone2 = phonenumbe2,id2 = file2,rollno2=rollno2, name3=name3,email3=email3,branch3=branch3,semester3=semester3,phone3 = phonenumbe3,id3 = file3,rollno3=rollno3, name4=name4,email4=email4,branch4=branch4,semester4=semester4,phone4 = phonenumbe4,id4 = file4,rollno4=rollno4 )
+        a = Designathon(college=college,teamname=teamname,type_institution=institution,name1=name1,email1=email1,branch1=branch1,semester1=semester1,phone1 = phonenumber1,id1 = file1,rollno1=rollno1 , name2=name2,email2=email2,branch2=branch2,semester2=semester2,phone2 = phonenumbe2,id2 = file2,rollno2=rollno2, name3=name3,email3=email3,branch3=branch3,semester3=semester3,phone3 = phonenumbe3,rollno3=rollno3, name4=name4,email4=email4,branch4=branch4,semester4=semester4,phone4 = phonenumbe4,rollno4=rollno4 )
+
+        try:
+            file3 = request.FILES['file3']
+            a.id3 = file3
+        except Exception as e:
+            pass
+        try:
+           file4 = request.FILES['file4']
+           a.id4 = file4
+        except Exception as e:
+            pass
         a.save()
         messages.success(request,"Registration successfull. Thankyou for registration.")
         return redirect("designathon_register")
@@ -158,8 +169,14 @@ def electroinsight_register(request):
         branch2 = request.POST['branch2']
         semester2 = request.POST['semester2']
         rollno2 =request.POST['rollno2']
-        file2 = request.FILES['file2']
-        a = Electroinsight(college=college,teamname=teamname,type_institution=institution,name1=name1,email1=email1,branch1=branch1,semester1=semester1,phone1 = phonenumber1,id1 = file1,rollno1=rollno1 , name2=name2,email2=email2,branch2=branch2,semester2=semester2,phone2 = phonenumbe2,id2 = file2,rollno2=rollno2 )
+      
+        a = Electroinsight(college=college,teamname=teamname,type_institution=institution,name1=name1,email1=email1,branch1=branch1,semester1=semester1,phone1 = phonenumber1,id1 = file1,rollno1=rollno1 , name2=name2,email2=email2,branch2=branch2,semester2=semester2,phone2 = phonenumbe2,rollno2=rollno2 )
+
+        try:
+            file2 = request.FILES['file2']
+            a.id2 = file2
+        except Exception as e:
+            pass
         a.save()
         messages.success(request,"Registration successfull. Thankyou for registration.")
         return redirect("electroinsight")
@@ -189,7 +206,6 @@ def roborace_register(request):
         branch2 = request.POST['branch2']
         semester2 = request.POST['semester2']
         rollno2 =request.POST['rollno2']
-        file2 = request.FILES['file2']
 
         name3 = request.POST['name3']
         phonenumbe3 = request.POST['phonenumber3']
@@ -197,9 +213,21 @@ def roborace_register(request):
         branch3 = request.POST['branch3']
         semester3 = request.POST['semester3']
         rollno3 = request.POST['rollno3']
-        file3 = request.FILES['file3']
+      
 
-        a = RoboPresetation(college=college,teamname=teamname,type_institution=institution,name1=name1,email1=email1,branch1=branch1,semester1=semester1,phone1 = phonenumber1,id1 = file1,rollno1=rollno1 , name2=name2,email2=email2,branch2=branch2,semester2=semester2,phone2 = phonenumbe2,id2 = file2,rollno2=rollno2, name3=name3,email3=email3,branch3=branch3,semester3=semester3,phone3 = phonenumbe3,id3 = file3,rollno3=rollno3 )
+        a = RoboPresetation(college=college,teamname=teamname,type_institution=institution,name1=name1,email1=email1,branch1=branch1,semester1=semester1,phone1 = phonenumber1,id1 = file1,rollno1=rollno1 , name2=name2,email2=email2,branch2=branch2,semester2=semester2,phone2 = phonenumbe2,rollno2=rollno2, name3=name3,email3=email3,branch3=branch3,semester3=semester3,phone3 = phonenumbe3,rollno3=rollno3 )
+        # Handling files
+        try:
+            file2 = request.FILES['file2']
+            a.id2 = file2
+        except Exception as e:
+            pass
+        try:
+            file3 = request.FILES['file3']
+            a.id3 = file3
+        except Exception as e:
+            pass
+
         a.save()
         messages.success(request,"Registration successfull. Thankyou for registration.")
         return redirect("roborace")
@@ -226,9 +254,14 @@ def project_display_register(request):
         branch2 = request.POST['branch2']
         semester2 = request.POST['semester2']
         rollno2 =request.POST['rollno2']
-        file2 = request.FILES['file2']
+        
 
-        a = ProjectDisplay(college=college,teamname=teamname,type_institution=institution,name1=name1,email1=email1,branch1=branch1,semester1=semester1,phone1 = phonenumber1,id1 = file1,rollno1=rollno1 , name2=name2,email2=email2,branch2=branch2,semester2=semester2,phone2 = phonenumbe2,id2 = file2,rollno2=rollno2,projectname=projectname )
+        a = ProjectDisplay(college=college,teamname=teamname,type_institution=institution,name1=name1,email1=email1,branch1=branch1,semester1=semester1,phone1 = phonenumber1,id1 = file1,rollno1=rollno1 , name2=name2,email2=email2,branch2=branch2,semester2=semester2,phone2 = phonenumbe2,rollno2=rollno2,projectname=projectname )
+        try:
+            file2 = request.FILES['file2']
+            a.id2 = file2
+        except Exception as e:
+            pass
         a.save()
         messages.success(request,"Registration successfull. Thankyou for registering for the event.")
         return redirect('project_display')
@@ -255,9 +288,17 @@ def rangoli_register(request):
         branch2 = request.POST['branch2']
         semester2 = request.POST['semester2']
         rollno2 =request.POST['rollno2']
-        file2 = request.FILES['file2']
-        a = Rangoli(college=college,teamname=teamname,type_institution=institution,name1=name1,email1=email1,branch1=branch1,semester1=semester1,phone1 = phonenumber1,id1 = file1,rollno1=rollno1 , name2=name2,email2=email2,branch2=branch2,semester2=semester2,phone2 = phonenumbe2,id2 = file2,rollno2=rollno2 )
+     
+
+       
+        a = Rangoli(college=college,teamname=teamname,type_institution=institution,name1=name1,email1=email1,branch1=branch1,semester1=semester1,phone1 = phonenumber1,id1 = file1,rollno1=rollno1 , name2=name2,email2=email2,branch2=branch2,semester2=semester2,phone2 = phonenumbe2,rollno2=rollno2 )
+        try:
+            file2 = request.FILE['file2']
+            a.id2 = file2
+        except Exception as e:
+            pass
         a.save()
+
         messages.success(request,"Registration successfull. Thankyou for registration.")
         return redirect("rangoli")
 

@@ -17,7 +17,7 @@
             <input type="text" name="teamname" class="form-control" id="teamname" required>
 
         </div>
-        <h4 class="subheadings mt-2">1st Team Member Details</h4>
+        <h4 class="subheadings mt-2">1st Team Member Details (Leader)</h4>
         <div class="mb-3">
             <label for="exampleInputname1" class="form-label" >Full Name*</label>
             <input type="text" name="name1" class="form-control" id="exampleInpuname1" required>
@@ -31,7 +31,7 @@
         </div>
         <div class="mb-3">
             <label fo-="exampleInputPassword1" class="form-label">Phone Number*</label>
-            <input name="phonenumber1" type="number" class="form-control" id="exampleInputPassword1" required>
+            <input name="phonenumber1" type="tel"pattern="[6-9]{1}[0-9]{2}[0-9]{3}[0-9]{4}" class="form-control" id="exampleInputPassword1" required>
         </div>
 
 
@@ -50,7 +50,7 @@
         </div>
         <div class="mb-3">
             <label fo-="exampleInputPassword2" class="form-label">Phone Number*</label>
-            <input name="phonenumber2" type="number" class="form-control" id="exampleInputPassword2" required>
+            <input name="phonenumber2" type="tel"pattern="[6-9]{1}[0-9]{2}[0-9]{3}[0-9]{4}" class="form-control" id="exampleInputPassword2" required>
         </div>
 
        <!-- details for 3rd ==================================-->
@@ -68,7 +68,7 @@
         </div>
         <div class="mb-3">
             <label fo-="exampleInputPassword3" class="form-label">Phone Number</label>
-            <input name="phonenumber3" type="number" class="form-control" id="exampleInputPassword3" value="0">
+            <input name="phonenumber3" type="tel" pattern="[6-9]{1}[0-9]{2}[0-9]{3}[0-9]{4}" class="form-control" id="exampleInputPassword3" >
         </div>
 
         <!-- details for 4th ==================================-->
@@ -86,7 +86,7 @@
         </div>
         <div class="mb-3">
             <label fo-="exampleInputPassword4" class="form-label">Phone Number</label>
-            <input name="phonenumber4" type="number" class="form-control" id="exampleInputPassword4" value="0">
+            <input name="phonenumber4" type="tel" pattern="[6-9]{1}[0-9]{2}[0-9]{3}[0-9]{4}" class="form-control" id="exampleInputPassword4" >
         </div>
 
         <div class="my-2" style="width: 200px;">
@@ -123,7 +123,7 @@
 
         
 
-        <p style="color: red;">If there are less then 4 members in team then upload empty pdf of remaining members.</p>
+        
         <div class="mb-3">
             <label for="file1">Id proof 1st Member(PDF, Max: 2MB)*:</label>
             <input type="file" id="file1" name="file1" accept=".pdf" required>
@@ -136,13 +136,13 @@
         </div>
        
         <div class="mb-3">
-            <label for="file3">Id proof 3rd Member(PDF, Max: 2MB)*:</label>
-            <input type="file" id="file3" name="file3" accept=".pdf" required >
+            <label for="file3">Id proof 3rd Member(PDF, Max: 2MB):</label>
+            <input type="file" id="file3" name="file3" accept=".pdf"  >
 
         </div>
         <div class="mb-3">
-            <label for="file4">Id proof 4th Member (PDF, Max: 2MB)*:</label>
-            <input type="file" id="file4" name="file4" accept=".pdf" required>
+            <label for="file4">Id proof 4th Member (PDF, Max: 2MB):</label>
+            <input type="file" id="file4" name="file4" accept=".pdf" >
 
         </div>
 

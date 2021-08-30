@@ -19,7 +19,7 @@
             <input type="text" name="teamname" class="form-control" id="teamname" >
 
         </div>
-        <h4 class="subheadings mt-2">1st Team Member Details</h4>
+        <h4 class="subheadings mt-2">1st Team Member Details (Leader)</h4>
         <div class="mb-3">
             <label for="exampleInputname1" class="form-label" >Full Name*</label>
             <input type="text" name="name1" class="form-control" id="exampleInpuname1" required>
@@ -33,7 +33,7 @@
         </div>
         <div class="mb-3">
             <label fo-="exampleInputPassword1" class="form-label">Phone Number*</label>
-            <input name="phonenumber1" type="number" class="form-control" id="exampleInputPassword1" required>
+            <input name="phonenumber1" type="tel" pattern="[6-9]{1}[0-9]{2}[0-9]{3}[0-9]{4}" class="form-control" id="exampleInputPassword1" required>
         </div>
 
 
@@ -52,7 +52,7 @@
         </div>
         <div class="mb-3">
             <label fo-="exampleInputPassword2" class="form-label">Phone Number</label>
-            <input name="phonenumber2" type="number" class="form-control" value="0" id="exampleInputPassword2" >
+            <input name="phonenumber2" type="tel" pattern="[6-9]{1}[0-9]{2}[0-9]{3}[0-9]{4}" class="form-control" id="exampleInputPassword2" >
         </div>
 
         <div class="my-2" style="width: 200px;">
@@ -95,10 +95,10 @@
             <input type="file" id="file1" name="file1" accept=".pdf" required>
 
         </div>
-        <p style="color: red;">If there is only 1 member then upload empty pdf of 2nd member.</p>
+   
         <div class="mb-3">
-            <label for="file2">Id proof 2nd Member (PDF, Max: 2MB)*:</label>
-            <input type="file" id="file2" name="file2" accept=".pdf" required>
+            <label for="file2">Id proof 2nd Member (PDF, Max: 2MB):</label>
+            <input type="file" id="file2" name="file2" accept=".pdf" >
 
         </div>
         
