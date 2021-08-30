@@ -10,7 +10,10 @@
     <link href="https://fonts.googleapis.com/css2?family=Ubuntu:wght@500&display=swap" rel="stylesheet">
     <script src="https://kit.fontawesome.com/64d58efce2.js" crossorigin="anonymous"></script>
     <link href="https://fonts.googleapis.com/css2?family=Righteous&display=swap" rel="stylesheet">
-    <title>Hello, world!</title>
+    {% load static %}
+    <link rel = "icon" href ="{% static 'photo/ceclogo.png' %}"
+            type = "image/x-icon">
+        <title>Engineer's Day : CEC, Jhanjeri, Mohali</title>
     {% block heading %}{% endblock heading %}
     <style>
     
@@ -80,6 +83,9 @@ background: linear-gradient(90deg, rgba(2,0,36,1) 0%, rgba(9,9,121,1) 0%, rgba(0
     border: 1px solid lightblue;
     border-radius: 50px;
 }
+.co{
+  font-size: 20px;
+}
 {% block css %}{% endblock css %}
             </style>
   </head>  
@@ -94,11 +100,11 @@ background: linear-gradient(90deg, rgba(2,0,36,1) 0%, rgba(9,9,121,1) 0%, rgba(0
           <p class="text-muted mx-3">Endless Opportunities await you at Chandigarh Engineering College Jhanjeri, Mohali. We have been providing a range of advanced courses for students to excel and have a great future ahead..</p>
         </div>
         <div class="col-sm-4 offset-md-1 py-4 ">
-          <h4 class="text-white px-3">Pages</h4>
+          <h4 class="text-white px-3">Go to</h4>
           <ul class="list-unstyled px-3">
             <li><a href="{% url 'technical_event' %}" class="text-light">Technical Events</a></li>
             <li><a href="{% url 'non_technical_event' %}"  class="text-light">Non Technical Events</a></li>
-            <li><a href="{% url 'all_event' %}" class="text-light">About Us</a></li>
+            <li><a href="https://www.cgc.ac.in/" class="text-light">Explore CEC</a></li>
           </div>
           </ul>
         </div>
@@ -128,14 +134,16 @@ background: linear-gradient(90deg, rgba(2,0,36,1) 0%, rgba(9,9,121,1) 0%, rgba(0
   <footer class="text-muted py-5 bg-light">
   <div class="container">
     <p class="float-end mb-1">
-      <a style="text-decoration: none;" href="#">Back to top</a>
+      <a href="#" class="badge  bg-warning text-dark" style="text-decoration: none; font-size: 15px;">
+        <i class="fa fa-arrow-alt-circle-up"></i> <strong>Back to Top</strong>
+      </a>
     </p>
     <div class="row">
       <div class="col-md-2 col-12">
         <img src="https://1.bp.blogspot.com/-gj_n24ExcWs/YSdhRT9xgoI/AAAAAAAABQE/A7MppzA-LvITQXJy46H31L7aRfHJ5OHEQCLcBGAsYHQ/s320/CEC%2Blogo%2B%25281%2529.jpg" alt="" height="100px" width="75px">
       </div>
       <div class="col-12 col-md-10 py-3" >
-        <p class="mb-1" >Celebrating the Engineer's day Chandigarh Engineering College Jhanjeri, Mohali.</p>
+        <p class="mb-1" >Celebrating the Engineer's day at Chandigarh Engineering College Jhanjeri, Mohali.</p>
         <p class="mb-0" >Bestowed with Excellence in Campus Placements Award by Honourable Capt. Amarinder Singh, CM Punjab</p>
       </div>
       

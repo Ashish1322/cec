@@ -38,23 +38,38 @@
 
 </div>
 
+
 <div class="container my-2">
     <h2 class="subheadings">Coordinator Details</h2>
+    <p class="para-font">For any query regarding this event please contact the following Coordinators.</p>
      <div class="text-center p-3">
          <div class="row">
-             <div class="col-md-6 col">
-                <img src="https://cdn.pixabay.com/photo/2016/03/09/09/17/desktop-1245714_960_720.jpg" alt="" height="170px" width="170px" style="border-radius: 50%;">
+             <div class="col-md-3 col">
+             {% load static %}
+                <img class="faces" src="{% static 'photo/anant.jpeg' %}" alt="" height="100%" width="100%" style="border-radius: 50%;">
              </div>
-             <div class="col-md-6 col " style=" text-align: left;">
+             <div class="col-md-9 col " style=" text-align: left;">
             
-                <h3 class="mt-2" style="font-weight: 700;">Dr. Rajneesh Talwar </h3>
-                <p class="para-font">For any query regarding this event please contact the Coordinator Dr. Rajneesh Talwar through following details</p>
-                <a href="https://wa.me/7307320365" class="btn btn-success" style="font-size: 20px;"><i class="fa fa-whatsapp  "></i> Message on Whatsapp</a>
+                <h4 class="mt-2 " style="font-weight: 700; "> Anant jain</h4>
+                <p class="co"><i class="fa fa-phone fa-rotate-90"></i> +91 9813852424</p>
+                <p class="co"><i class="fa fa-envelope"></i>  anantjain2512@gmail.com</p>
+                <a href="https://wa.me/9813852424" class="btn btn-success" style="font-size: 20px;"><i class="fa fa-whatsapp  "></i> Message on Whatsapp</a>
+             </div>
+         </div>
+         <div class="row mt-3">
+             <div class="col-md-3 col">
+             {% load static %}
+                <img class="faces" src="{% static 'photo/chaitnya.jpeg' %}" alt="" height="100%" width="100%" style="border-radius: 50%;">
+             </div>
+             <div class="col-md-9 col " style=" text-align: left;">
+            
+                <h4 class="mt-2 " style="font-weight: 700; ">Chaitanya Goswami</h4>
+                <p class="co"><i class="fa fa-phone fa-rotate-90"></i> +91 9599429350</p>
+                <p class="co"><i class="fa fa-envelope"></i> cgchaitanya4@gmail.com </p>
+                <a href="https://wa.me/9599429350" class="btn btn-success" style="font-size: 20px;"><i class="fa fa-whatsapp  "></i> Message on Whatsapp</a>
              </div>
          </div>
         
-        
-
      </div>
 </div>
 {% endblock body %}
